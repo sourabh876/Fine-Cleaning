@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    background: #959393ee;
+    
+}
+
+.box1{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    margin: 100px;
+    transition:  15s ease-in-out;
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    
+    transition: 15s ease-in-out;
+}
+
+.box1:hover{
+    /* transform:skew(5deg,5deg); */
+   transform: rotatex(360deg);
+   transform: translate(50%,50%);
+}
+
+.box2:hover{
+    
+    transform: translate(50%,50%);
+    /* transform: rotate(360deg); */
+}
