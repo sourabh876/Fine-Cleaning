@@ -3,37 +3,118 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.container{
-    display: grid;
-    background: #959393ee;
-    
-}
-
-.box1{
-    height: 400px;
-    width: 400px;
+body{
     background-color: black;
-    margin: 100px;
-    transition:  15s ease-in-out;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    /* background-color: cornflowerblue; */
+    align-items: center;
 }
 
-.box2{
-    height: 200px;
-    width: 200px;
-    background-color: white;
+nav section{
+    margin: 40px;
+}
+
+#select{
+    width: 17px;
+    border: none;
+    background: none;
+    color: white;
+}
+
+select option{
+    color: black;
+    border-radius: 10%;
+}
+
+section ul{
+    display: flex;
+    gap: 10px;
     
-    transition: 15s ease-in-out;
 }
 
-.box1:hover{
-    /* transform:skew(5deg,5deg); */
-   transform: rotatex(360deg);
-   transform: translate(50%,50%);
+section a{
+    text-decoration: none;
+    color: rgb(210, 176, 181);
+    outline: none;
 }
 
-.box2:hover{
+section ul a:hover{
+    color: cornflowerblue;
+}
+
+#username{
+    height: 35px;
+    width: 70px;
+    border: none;
+    background-color:rgb(243, 211, 173);
+    border-radius: 15%;
+    color:black;
+}
+main{
+    height: 85vh;
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.left .h1{
+    color: rgb(243, 211, 173);
+    font-size: 35px;
+    margin: 10px;
+}
+.left p{
+    color: rgb(210, 176, 181);
+    margin: 10px;
+}
+.left section{
+    width: 40vw;
+}
+
+.right{
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.laundryimg{
+width: 40vw;
+height: 60vh;
+background: none;
+
+}
+
+#Appointment{
+    background: none;
+    border: none;
+    background-color: rgb(243, 211, 173);
+    margin: 10px;
+    height: 40px;
+    width: 170px;
+    border-radius: 20%;
     
-    transform: translate(50%,50%);
-    /* transform: rotate(360deg); */
+}
+#Appointment:hover{
+    color: cornflowerblue;
+}
+
+.logo{
+    height: 50px;
+    width: 100px;
+}
+
+.blue{
+    color:cornflowerblue;
+    font-size: 35px;
+    margin: 10px;
 }
